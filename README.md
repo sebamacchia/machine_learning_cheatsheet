@@ -240,6 +240,46 @@ np.subtract(a,b) # substraction a - b
 np.add(b,a) # Addition b + a
 np.divide(a,b) # division
 np.multiply(a,b) # multiplication
-
+np.exp(b) # Exponentiation
+np.sqrt(b) # Square root
+np.sin(a) # Print sines of an array
+np.cos(b) # Element-wise cosine
+np.log(a) # Element-wise natural logarithm
+e.dot(f) #Dot product
 ```
+
+## Comparison
+```python
+a == b # Element-wise comparison
+a < 2 # Element-wise comparison
+np.array_equal(a, b) # Array-wise comparison
+```
+
+## Aggregate Functions
+
+```python
+a.sum() # Array-wise sum
+a.min() # Array-wise minimum value
+b.max(axis=0) # Maximum value of an array row
+b.cumsum(axis=1) # Cumulative sum of the elements
+a.mean() # Mean
+b.median() # Median
+a.corrcoef() # Correlation coefficient
+np.std(b) # Standard deviation
+```
+
+## Copying Arrays
+```python
+h = a.view() # Create a view of the array with the same data
+np.copy(a) # Create a copy of the array
+h = a.copy() # Create a deep copy of the array
+```   
+
+## Sorting Arrays
+```python
+a.sort() # Sort an array
+c.sort(axis=0) # Sort the elements of an array's axis
+```
+
+
 
